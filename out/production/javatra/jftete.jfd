@@ -1,0 +1,136 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "form"
+	"i18n.keyPrefix": "jftete"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+						name: "panel1"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 20
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+						name: "panel2"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": new FormMessage( null, "jftete.label2.text" )
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 17, false )
+							"focusTraversalPolicyProvider": true
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 0
+						"y": 0
+						"width": 495
+						"height": 50
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:80:p, comp label1:::p::p, space ::84:x}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp label1::::48:x, space :::p}}"
+					} ) {
+						name: "panel3"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": new FormMessage( null, "jftete.label1.text" )
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 0
+						"y": 60
+						"width": 250
+						"height": 60
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :p:63:p, comp comboBox2:::::x, space :p:68:p}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp comboBox2:::::x, space :::p}}"
+					} ) {
+						name: "panel4"
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox2"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 250
+						"height": 60
+						"x": 245
+						"y": 60
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:59:p, comp label3:::p::p, space ::61:x}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp label3::::48:x, space :::p}}"
+					} ) {
+						name: "panel5"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": new FormMessage( null, "jftete.label3.text" )
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 250
+						"height": 60
+						"x": 0
+						"y": 140
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:3:p, comp slider1:::p::p, space :::p, comp label4::::35:x, space :::p}}"
+						"$verticalGroup": "par l {seq l {space :p:14:p, par l:::p {comp slider1::::32:x, comp label4::::32:x}, space ::14:x}}"
+					} ) {
+						name: "panel6"
+						add( new FormComponent( "javax.swing.JSlider" ) {
+							name: "slider1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": new FormMessage( null, "jftete.label4.text" )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 250
+						"height": 60
+						"x": 245
+						"y": 140
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0:1.0, 80, 80"
+						"$hGap": 5
+						"$vGap": 5
+						"$rowSpecs": "0"
+					} ) {
+						name: "buttonBar"
+						"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "okButton"
+							"text": "确定"
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "cancelButton"
+							"text": "取消"
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 2
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 494
+						"x": 0
+						"y": 225
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 80, 35 )
+			"size": new java.awt.Dimension( 520, 325 )
+		} )
+	}
+}
